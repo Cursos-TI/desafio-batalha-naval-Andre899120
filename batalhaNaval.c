@@ -31,7 +31,7 @@ int main() {
         tabuleiro[3][i + 2] = navio1[i]; // Posiciona o navio1 horizontalmente na posição (3, C) (3, D) (3, E)
         tabuleiro[i + 5][2] = navio2[i]; // Posiciona o navio2 verticalmente na posição (5, C) (6, C) (7, C)
         tabuleiro[i + 2][i + 6] = navio3[i]; // Posiciona o navio3 diagonalmente na posição (2, G) (3, H) (4, I)
-        tabuleiro[i + 5][i + 6] = navio4[i]; // Posiciona o navio4 diagonalmente na posição (5, G) (5, H) (6, I)
+        tabuleiro[i + 5][6 - i] = navio4[i]; // Posiciona o navio4 diagonalmente na posição (5, G) (6, F) (7, E)
     }
 
     for (int i = 0; i < 10; i++)
